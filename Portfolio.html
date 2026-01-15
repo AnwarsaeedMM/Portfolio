@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anwar Saeed MM - Data Scientist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .skill-bar { transition: width 1s ease-in-out; }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+        <div class="text-2xl font-bold text-gray-800 text-left flex-shrink-0 ml-0">I'm a Data Scientist</div>
+
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-600 transition-colors">Skills</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <button id="mobile-menu" class="md:hidden text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+  <section id="home" class="min-h-screen bg-gray-900 text-white flex items-center">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+
+    <!-- LEFT -->
+    <div>
+      <h1 class="text-6xl font-bold">
+        Hi, I’m <span class="text-lime-400">Anwar</span><br>
+        Data Scientist
+      </h1>
+
+      <p class="text-gray-300 mt-6 text-lg max-w-xl">
+        Specializing in data analytics, machine learning, predictive modeling,
+        and business intelligence.
+      </p>
+
+      <div class="grid grid-cols-3 gap-6 mt-10">
+        <div class="bg-gray-800 p-4 rounded-xl text-center">
+          <h3 class="text-3xl font-bold text-lime-400">10+</h3>
+          <p class="text-sm text-gray-400">Projects</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-xl text-center">
+          <h3 class="text-3xl font-bold text-lime-400">5+</h3>
+          <p class="text-sm text-gray-400">ML Models</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-xl text-center">
+          <h3 class="text-3xl font-bold text-lime-400">100K+</h3>
+          <p class="text-sm text-gray-400">Data Rows</p>
+        </div>
+      </div>
+
+      <div class="mt-10 flex gap-6">
+        <a href="#projects" class="bg-lime-400 text-black px-6 py-3 rounded-lg font-semibold">
+          Explore Work
+        </a>
+        <a href="#contact" class="border border-gray-400 px-6 py-3 rounded-lg">
+          Contact
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="flex justify-center">
+     <img src="images/my_image.png"
+     class="w-[400px] h-[400px] object-cover rounded-xl shadow-2xl border border-gray-700"
+     alt="profile">
+
+
+
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <div class="w-80 h-80 mx-auto bg-gradient-to-br from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center text-8xl">
+                        🚀
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Building the Future, One Line at a Time</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        As a fresh graduate with a B.E in Computer Science and Engineering,I specialize in data analysis, machine learning, and predictive modeling.I enjoy working with structured and unstructured data to solve real-world problems.
+
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        I'm passionate about clean code, user experience, and continuous learning. Through my academic projects and personal development, I've gained hands-on experience with various technologies and frameworks. I'm excited to start my professional journey and contribute to innovative solutions.I'm passionate about statistics, data-driven decision making, and continuous learning.Through academic and personal projects, I’ve gained hands-on experience in data preprocessing, feature engineering, and model evaluation.
+
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">🎓 Education</h4>
+                            <p class="text-gray-600">B.E Computer Science and Engineering</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">💼 Experience</h4>
+                            <p class="text-gray-600">Fresher<br>Data Scientist & Analytics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Featured Projects</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Here are some of my recent projects that showcase my skills and passion for creating innovative solutions.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+                    <div class="h-48 bg-gradient-to-br from-gray-500 to-purple-600 flex items-center justify-center text-6xl">
+                        🌐
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Web Application</h3>
+                        <p class="text-gray-600 mb-4">A web api for Machine-learning Based 'Student risk assesment system' a comparitive study of Gradient boosting and Logistic regression.Reduce student dropout rate . </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Scikit-learn</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">Streamlit</span>
+                        </div>
+                        <div class="flex space-x-4">
+                                <a href="http://localhost:8501/" target="_blank"
+                                  class="text-blue-600 hover:text-blue-800 font-medium">Live Demo</a>
+                            <a href="https://github.com/AnwarsaeedMM/college_project" target="_blank"
+                                  class="text-gray-600 hover:text-gray-800 font-medium">GitHub</a>                         
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-6xl">
+                        🧥
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">E-Commerce Platform</h3>
+                        <p class="text-gray-600 mb-4">Full-stack e-commerce solution for clothing or dresses sales, inventory management, and analytics dashboard.To expand marketing and slaes for dresses</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-red-100 text-red-600 rounded-full text-sm">PostgreSQL</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <button class="text-blue-600 hover:text-blue-800 font-medium">Live Demo</button>
+                            <button class="text-gray-600 hover:text-gray-800 font-medium">GitHub</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+                    <div class="h-48 bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center text-6xl">
+                        🤖
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">AI Chat Assistant</h3>
+                        <p class="text-gray-600 mb-4">Intelligent chatbot using natural language processing to provide customer support and automated responses.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">TensorFlow</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">FastAPI</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <button class="text-blue-600 hover:text-blue-800 font-medium">Live Demo</button>
+                            <button class="text-gray-600 hover:text-gray-800 font-medium">GitHub</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <!-- Skills Section -->
+<section id="skills" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    
+    <!-- Heading -->
+    <div class="text-center mb-16 fade-in">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">Technical Skills</h2>
+      <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Technical expertise in data analysis, machine learning, and data-driven decision making.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12">
+
+      <!-- Data Analysis -->
+      <div class="fade-in">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-8">Data Analysis & Visualization</h3>
+        <div class="space-y-6">
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-gray-700 font-medium">Python (Pandas, NumPy)</span>
+              <span class="text-gray-600">90%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width:0%" data-width="90%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-gray-700 font-medium">Data Visualization (Matplotlib, Seaborn)</span>
+              <span class="text-gray-600">85%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-green-600 h-3 rounded-full" style="width:0%" data-width="85%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-gray-700 font-medium">Excel & Power BI</span>
+              <span class="text-gray-600">80%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-purple-600 h-3 rounded-full" style="width:0%" data-width="80%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-gray-700 font-medium">Statistics & Probability</span>
+              <span class="text-gray-600">88%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-pink-600 h-3 rounded-full" style="width:0%" data-width="88%"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Machine Learning -->
+      <div class="fade-in">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-8">Machine Learning & Databases</h3>
+        <div class="space-y-6">
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-gray-700 font-medium">Machine Learning (Scikit-learn)</span>
+              <span class="text-gray-600">82%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-yellow-600 h-3 rounded-full" style="width:0%" data-width="82%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-gray-700 font-medium">Deep Learning (TensorFlow / Keras)</span>
+              <span class="text-gray-600">70%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-red-600 h-3 rounded-full" style="width:0%" data-width="70%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-gray-700 font-medium">SQL & Databases (MySQL, MongoDB)</span>
+              <span class="text-gray-600">85%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-indigo-600 h-3 rounded-full" style="width:0%" data-width="85%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-gray-700 font-medium">Deployment (Streamlit, Git, Docker)</span>
+              <span class="text-gray-600">78%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-orange-600 h-3 rounded-full" style="width:0%" data-width="78%"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Let's Work Together</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have a project in mind? I'd love to hear about it. Let's discuss how we can bring your ideas to life.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Get In Touch</h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xl">📧</div>
+                            <div>
+                                <p class="font-medium text-gray-800">Email</p>
+                                <p class="text-gray-600">anwar313saeed@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-xl">📱</div>
+                            <div>
+                                <p class="font-medium text-gray-800">Phone</p>
+                                <p class="text-gray-600">9567613137</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 text-xl">📍</div>
+                            <div>
+                                <p class="font-medium text-gray-800">Location</p>
+                                <p class="text-gray-600">Kerala, Malappuram, Kondotty<br>Pin: 673638-Muthuvallur</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <button class="w-12 h-12 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">💼</button>
+                        <button class="w-12 h-12 bg-gray-800 text-white rounded-full hover:bg-gray-900 transition-colors">🐙</button>
+                        <button class="w-12 h-12 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors">🐦</button>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <form id="contact-form" class="space-y-6">
+  <input name="name" required placeholder="Your Name"
+         class="w-full p-3 border rounded">
+
+  <input name="email" type="email" required placeholder="Email"
+         class="w-full p-3 border rounded">
+
+  <textarea name="message" required placeholder="Message"
+            class="w-full p-3 border rounded"></textarea>
+
+  <button id="submitBtn" class="bg-blue-600 text-white px-6 py-3 rounded">
+  Send Message
+</button>
+
+</form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-400">&copy; 2025 Anwar Saeed MM. All rights reserved. Built with passion and lots of coffee ☕</p>
+        </div>
+    </footer>
+
+    <script>
+/* Smooth scrolling */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector(anchor.getAttribute('href'))
+      .scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+/* Fade-in animation */
+const fadeObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+
+/* Skill bar animation */
+const skillsObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      document.querySelectorAll('.skill-bar').forEach(bar => {
+        bar.style.width = bar.dataset.width;
+      });
+      skillsObserver.disconnect();
+    }
+  });
+}, { threshold: 0.3 });
+
+skillsObserver.observe(document.querySelector('#skills'));
+
+/* CONTACT FORM → FLASK API */
+document.getElementById("contact-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const data = {
+    name: e.target.name.value,
+    email: e.target.email.value,
+    message: e.target.message.value
+  };
+
+  try {
+    const res = await fetch("http://127.0.0.1:5000/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+
+    const result = await res.json();
+
+    if (result.status === "success") {
+      alert("Message saved successfully ✅");
+      e.target.reset();
+    } else {
+      alert("Something went wrong ❌");
+    }
+  } catch (err) {
+    alert("Flask server not running ❗");
+  }
+});
+</script>
+
+</body>
+</html>
