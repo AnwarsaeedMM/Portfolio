@@ -2,7 +2,13 @@ from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 from mysql.connector import pooling
 
+
 app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Flask is running on Railway 🚀"
+
 CORS(app)
 
 # Database connection pool
