@@ -30,7 +30,8 @@ def get_db_pool():
 # -------------------------
 @app.route("/")
 def home():
-    return render_template("portfolio.html")
+    return "Portfolio backend running ✅"
+
 
 @app.route("/health")
 def health():
