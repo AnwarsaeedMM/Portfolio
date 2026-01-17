@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 from mysql.connector import pooling
@@ -12,14 +13,18 @@ def home():
 CORS(app)
 
 # Database connection pool
+import os
+
 db_pool = pooling.MySQLConnectionPool(
     pool_name="portfolio_pool",
     pool_size=5,
-    host="localhost",
-    user="root",
-    password="",
-    database="portfolio_db"
+    host=os.getenv("MYSQL_HOST"),
+    port=int(os.getenv("MYSQL_PORT", 3306)),
+    user=os.getenv("MYSQL_USER"),
+    password=os.getenv("MYSQL_PASSWORD"),
+    database=os.getenv("MYSQL_DATABASE")
 )
+
 
 # 🔹 Serve portfolio.html
 @app.route("/")
