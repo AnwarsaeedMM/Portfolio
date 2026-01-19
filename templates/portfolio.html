@@ -428,8 +428,6 @@ skillsObserver.observe(document.querySelector('#skills'));
 
 /* CONTACT FORM → FLASK API */
 <script>
-/* CONTACT FORM → FLASK API */
-
 document.getElementById("contact-form").addEventListener("submit", async (e) => {
   e.preventDefault();
 
@@ -449,13 +447,14 @@ document.getElementById("contact-form").addEventListener("submit", async (e) => 
     const result = await res.json();
 
     if (result.status === "success") {
-      alert("Message saved successfully ✅");
+      alert("Message sent successfully ✅");
       e.target.reset();
     } else {
       alert("Something went wrong ❌");
     }
   } catch (err) {
-    alert("Server error. Please try again later.");
+    alert("Server error ❗");
+    console.error(err);
   }
 });
 </script>
