@@ -17,26 +17,20 @@ def get_db_pool():
         db_pool = pooling.MySQLConnectionPool(
             pool_name="portfolio_pool",
             pool_size=5,
-            host=os.environ["MYSQL_HOST"],
+            host=os.environ.get("MYSQL_HOST"),
             port=int(os.environ.get("MYSQL_PORT", 3306)),
-            user=os.environ["MYSQL_USER"],
-            password=os.environ["MYSQL_PASSWORD"],
-            database=os.environ["MYSQL_DATABASE"]
+            user=os.environ.get("MYSQL_USER"),
+            password=os.environ.get("MYSQL_PASSWORD"),
+            database=os.environ.get("MYSQL_DATABASE")
         )
     return db_pool
 
 # -------------------------
-# Routes
+# ROUTES
 # -------------------------
 @app.route("/")
 def home():
     return render_template("portfolio.html")
-
-
-
-@app.route("/health")
-def health():
-    return "OK"
 
 @app.route("/contact", methods=["POST"])
 def contact():
@@ -58,7 +52,8 @@ def contact():
     return jsonify({"status": "success"})
 
 # -------------------------
-# Local run only
+# RAILWAY ENTRY POINT
 # -------------------------
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
