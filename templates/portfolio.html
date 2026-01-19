@@ -427,6 +427,9 @@ const skillsObserver = new IntersectionObserver(entries => {
 skillsObserver.observe(document.querySelector('#skills'));
 
 /* CONTACT FORM → FLASK API */
+<script>
+/* CONTACT FORM → FLASK API */
+
 document.getElementById("contact-form").addEventListener("submit", async (e) => {
   e.preventDefault();
 
@@ -437,7 +440,7 @@ document.getElementById("contact-form").addEventListener("submit", async (e) => 
   };
 
   try {
-    const res = await fetch("http://127.0.0.1:5000/contact", {
+    const res = await fetch("/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
@@ -452,10 +455,11 @@ document.getElementById("contact-form").addEventListener("submit", async (e) => 
       alert("Something went wrong ❌");
     }
   } catch (err) {
-    alert("Flask server not running ❗");
+    alert("Server error. Please try again later.");
   }
 });
 </script>
+
 
 </body>
 </html>
