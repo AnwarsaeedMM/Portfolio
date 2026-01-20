@@ -1,33 +1,10 @@
 import os
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
-from mysql.connector import pooling
 
 app = Flask(__name__)
 CORS(app)
 
-# -------------------------
-# SAFE DB POOL (lazy load)
-# -------------------------
-db_pool = None
-
-def get_db_pool():
-    global db_pool
-    if db_pool is None:
-        db_pool = pooling.MySQLConnectionPool(
-            pool_name="portfolio_pool",
-            pool_size=5,
-            host=os.environ.get("MYSQL_HOST"),
-            port=int(os.environ.get("MYSQL_PORT", 3306)),
-            user=os.environ.get("MYSQL_USER"),
-            password=os.environ.get("MYSQL_PASSWORD"),
-            database=os.environ.get("MYSQL_DATABASE")
-        )
-    return db_pool
-
-# -------------------------
-# ROUTES
-# -------------------------
 @app.route("/")
 def home():
     return render_template("portfolio.html")
@@ -35,25 +12,10 @@ def home():
 @app.route("/contact", methods=["POST"])
 def contact():
     data = request.json
-
-    pool = get_db_pool()
-    conn = pool.get_connection()
-    cursor = conn.cursor()
-
-    cursor.execute(
-        "INSERT INTO contact_messages (name, email, message) VALUES (%s, %s, %s)",
-        (data["name"], data["email"], data["message"])
-    )
-    conn.commit()
-
-    cursor.close()
-    conn.close()
+    print("Contact message received:", data)
 
     return jsonify({"status": "success"})
 
-# -------------------------
-# RAILWAY ENTRY POINT
-# -------------------------
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)

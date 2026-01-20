@@ -446,7 +446,7 @@ document.getElementById("contact-form").addEventListener("submit", async (e) => 
     const result = await res.json();
 
     if (result.status === "success") {
-      alert("Message saved successfully ✅");
+      alert("Message sent successfully ✅");
       e.target.reset();
     } else {
       alert("Something went wrong ❌");
@@ -455,6 +455,7 @@ document.getElementById("contact-form").addEventListener("submit", async (e) => 
     alert("Server error ❗");
   }
 });
+
 
 </script>
 
