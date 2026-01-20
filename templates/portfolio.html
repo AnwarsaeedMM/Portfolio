@@ -437,7 +437,7 @@ document.getElementById("contact-form").addEventListener("submit", async (e) => 
   };
 
   try {
-    const res = await fetch("http://127.0.0.1:5000/contact", {
+    const res = await fetch("/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
@@ -452,9 +452,10 @@ document.getElementById("contact-form").addEventListener("submit", async (e) => 
       alert("Something went wrong ❌");
     }
   } catch (err) {
-    alert("Flask server not running ❗");
+    alert("Server error ❗");
   }
 });
+
 </script>
 
 </body>
